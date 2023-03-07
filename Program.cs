@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO.Ports;
 using System.Windows.Forms;
 
@@ -10,7 +10,7 @@ class Program : Form
     public Program()
     {
         port = new SerialPort(); // otwieramy port COM1 z prędkością 9600 bps
-        port.PortName = "COM2";
+        port.PortName = "COM1";
         port.BaudRate = 19200;
         port.DataBits = 8;
         port.Parity = Parity.None;
